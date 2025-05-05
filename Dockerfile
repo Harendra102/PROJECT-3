@@ -1,5 +1,5 @@
 FROM centos:latest
-RUN yum install httpd zip wget unzip -y
+RUN yum install httpd zip wget zip -y
 RUN wget -O /var/www/html/healet.zip https://www.free-css.com/assets/files/free-css-templates/download/page296/carvilla.zip
 WORKDIR /var/www/html
 RUN unzip healet.zip
